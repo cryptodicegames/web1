@@ -53,7 +53,7 @@ function getSteamAPIKey() {
 		$fh = fopen($fileLoc, 'r');
 		$jsonStr = fgets($fh);
 		$arr = json_decode($jsonStr, true);
-		$key = $arr['steamAPIKey'];
+		$key = $arr['2FBC764FD34218C9DA9F2E2A20CA776B'];
 		fclose($fh);
 		return $key;
 	} else {
